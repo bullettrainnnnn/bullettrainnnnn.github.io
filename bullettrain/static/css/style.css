@@ -1,0 +1,177 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+}
+
+a {
+      text-decoration: none;
+}
+
+.menu-strip {
+      position: absolute;
+      background: #fff;
+      width: 10%;
+      height: 100vh;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      z-index: 1;
+}
+
+.menu-btn {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.menu-btn ion-icon {
+      font-size: 28px;
+      color: #a66f2c;
+}
+
+.nav .menu {
+      position: absolute;
+      width: 0%;
+      height: 100vh;
+      left: 10%;
+      background: #fff;
+}
+
+.images {
+      position: absolute;
+      width: 0%;
+      height: 100vh;
+      left: 55%;
+      background: url(../images/01.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.bg {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      /* background: #000; */
+}
+
+.nav .menu ul {
+      list-style: none;
+      position: absolute;
+      top: 36%;
+      left: 36%;
+      transform: translate(-50%, -50%);
+}
+
+#order {
+      font-size: 16px;
+      font-weight: 300;
+      color: #afafaf;
+}
+
+.nav .menu ul li a {
+      color: #594637;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 60px;
+}
+
+#tag {
+      font-size: 18px;
+      font-weight: 300;
+      color: #afafaf;
+      transition: 0.3s;
+}
+
+.nav .menu ul li:hover #tag {
+      color: #a66f2c;
+      transition: 1s;
+}
+
+#menu {
+      background: linear-gradient(#5b5b5b, #5b5b5b) left no-repeat, #afafaf;
+      background-size: 0% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.7s;
+}
+
+#menu:hover {
+      background-size: 100% 100%;
+}
+
+.bg-one {
+      display: block;
+      background: url(../images/01.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.bg-two {
+      display: block;
+      background: url(../images/02.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.bg-three {
+      display: block;
+      background: url(../images/03.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.bg-four {
+      display: block;
+      background: url(../images/04.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.bg-five {
+      display: block;
+      background: url(../images/05.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.hide {
+      display: none;
+}
+
+@media(max-width: 1140px) {
+      .images {
+            display: none;
+      }
+
+      .nav .menu {
+            width: 100%;
+            left: 20%;
+      }
+
+      .menu ul {
+            margin-top: 80px;
+            margin-left: -20px;
+      }
+
+      .menu-strip {
+            width: 20%;
+      }
+
+      .menu-btn {
+            position: absolute;
+            transform: translate(-50%, -90%);
+      }
+
+      .menu li #menu {
+            font-size: 18px;
+      }
+
+      #tag {
+            display: none;
+      }
+
+      #order {
+            display: none;
+      }
+
+      .line {
+            display: none;
+      }
+}
